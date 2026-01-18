@@ -1,20 +1,30 @@
-/* Address block above the single group map */
-.bagl-location-address {
+/* Search bar */
+.bagl-global-search-wrapper {
   margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 1.4;
 }
 
-/* Popup container */
+#bagl-global-search {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Map containers */
+#bagl-group-global-map,
+#bagl-group-map {
+  width: 100%;
+  min-height: 300px;
+}
+
+/* Popup */
 .bagl-popup {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   max-width: 220px;
-  padding: 2px;
 }
 
-/* Group avatar inside popup */
 .bagl-popup-avatar {
   width: 48px;
   height: 48px;
@@ -23,31 +33,14 @@
   object-fit: cover;
 }
 
-/* Group name inside popup */
 .bagl-popup-title a {
   font-weight: bold;
   text-decoration: none;
   color: #333;
 }
 
-/* Address inside popup */
 .bagl-popup-address {
   font-size: 12px;
   margin-top: 4px;
-  line-height: 1.3;
   color: #555;
-}
-
-/* Improve map container responsiveness */
-#bagl-group-map,
-#bagl-group-global-map {
-  width: 100%;
-  min-height: 300px;
-}
-
-/* Leaflet popup text smoothing */
-.leaflet-popup-content {
-  margin: 8px 12px;
-  font-size: 13px;
-  line-height: 1.4;
 }
