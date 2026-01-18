@@ -1,7 +1,6 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BuddyActivist Group Location 1.0.0\n"
-"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-18 00:00+0000\n"
 "PO-Revision-Date: 2026-01-18 00:00+0000\n"
 "Last-Translator: Marco <>\n"
@@ -50,3 +49,27 @@ msgstr "Paese"
 #: includes/class-bagl-rest.php:54
 msgid "No address available"
 msgstr "Indirizzo non disponibile"
+
+#: includes/class-bagl-map.php:63
+msgid "Search groups or places..."
+msgstr "Cerca gruppi o luoghi..."
+
+#: includes/class-bagl-admin.php:33
+msgid "Group Location Settings"
+msgstr "Impostazioni Localizzazione Gruppi"
+
+#: includes/class-bagl-admin.php:34
+msgid "Group Location"
+msgstr "Localizzazione Gruppi"
+
+#: includes/class-bagl-admin.php:72
+msgid "Default map center latitude"
+msgstr "Latitudine predefinita centro mappa"
+
+#: includes/class-bagl-admin.php:86
+msgid "Default map center longitude"
+msgstr "Longitudine predefinita centro mappa"
+
+#: includes/class-bagl-admin.php:100
+msgid "Default map zoom"
+msgstr "Zoom predefinito mappa"
