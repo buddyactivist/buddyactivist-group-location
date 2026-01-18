@@ -1,2 +1,2 @@
 # BuddyActivist Group Location
-Geolocation for BuddyPress/BuddyBoss Groups
+Geolocation for Buddypress & Buddyboss Groups
