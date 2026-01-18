@@ -1,0 +1,18 @@
+/* Spaziatura uniforme tra i campi della schermata Location */
+.bagl-location-settings p {
+  margin-bottom: 10px;
+}
+
+/* Migliora la leggibilità dei label */
+.bagl-location-settings label {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+/* Mappa admin */
+#bagl-admin-map {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+}
