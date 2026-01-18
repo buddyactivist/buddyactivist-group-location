@@ -1,1 +1,1 @@
-# buddyactivist-group-location
+# BuddyActivist Group Location
