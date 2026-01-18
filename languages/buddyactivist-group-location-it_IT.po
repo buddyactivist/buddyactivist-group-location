@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BuddyActivist Group Location 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-18 00:00+0000\n"
+"PO-Revision-Date: 2026-01-18 00:00+0000\n"
+"Last-Translator: Marco <>\n"
+"Language-Team: Italian\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Copilot\n"
+"X-Domain: buddyactivist-group-location\n"
+
+#: includes/class-bagl-group-extension.php:33
+#: includes/class-bagl-group-extension.php:45
+#: includes/class-bagl-group-extension.php:52
+msgid "Location"
+msgstr "Localizzazione"
+
+#: includes/class-bagl-group-extension.php:79
+msgid "This group has no location set yet."
+msgstr "Questo gruppo non ha ancora una posizione impostata."
+
+#: includes/class-bagl-group-extension.php:126
+msgid "Street"
+msgstr "Via"
+
+#: includes/class-bagl-group-extension.php:132
+msgid "Street number"
+msgstr "Numero civico"
+
+#: includes/class-bagl-group-extension.php:138
+msgid "ZIP / Postal code"
+msgstr "CAP"
+
+#: includes/class-bagl-group-extension.php:144
+msgid "City"
+msgstr "Città"
+
+#: includes/class-bagl-group-extension.php:150
+msgid "State / Province / Region"
+msgstr "Stato / Provincia / Regione"
+
+#: includes/class-bagl-group-extension.php:156
+msgid "Country"
+msgstr "Paese"
+
+#: includes/class-bagl-rest.php:54
+msgid "No address available"
+msgstr "Indirizzo non disponibile"
