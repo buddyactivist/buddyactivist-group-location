@@ -2,21 +2,27 @@ document.addEventListener('DOMContentLoaded', function () {
   const el = document.getElementById('bagl-group-global-map');
   if (!el || typeof L === 'undefined' || !window.BAGL_MAP) return;
 
-  // Default center: Italy
-  const map = L.map('bagl-group-global-map').setView([41.9, 12.5], 6);
+  // Default center from admin settings
+  const map = L.map('bagl-group-global-map').setView(
+    [BAGL_MAP.center.lat, BAGL_MAP.center.lng],
+    BAGL_MAP.center.zoom
+  );
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19
   }).addTo(map);
 
   const markers = L.markerClusterGroup();
+  let groups = [];
 
   fetch(BAGL_MAP.rest_url)
     .then(res => res.json())
-    .then(groups => {
-      if (!Array.isArray(groups)) return;
+    .then(data => {
+      if (!Array.isArray(data)) return;
 
-      groups.forEach(group => {
+      groups = data;
+
+      data.forEach(group => {
         if (!group.lat || !group.lng) return;
 
         const icon = L.icon({
@@ -36,9 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="bagl-popup-title">
               <a href="${group.link}">${group.name}</a>
             </div>
-            <div class="bagl-popup-address">
-              ${address}
-            </div>
+            <div class="bagl-popup-address">${address}</div>
           </div>
         `);
 
@@ -47,12 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
       map.addLayer(markers);
 
-      // Fit map to markers if any exist
       if (markers.getLayers().length) {
         map.fitBounds(markers.getBounds());
       }
+
+      // Export for search script
+      window.BAGL_GLOBAL_MAP = map;
+      window.BAGL_GLOBAL_MARKERS = markers;
+      window.BAGL_GLOBAL_GROUPS = groups;
     })
-    .catch(() => {
-      // Optional: silent fail to avoid breaking UI
-    });
+    .catch(() => {});
 });
